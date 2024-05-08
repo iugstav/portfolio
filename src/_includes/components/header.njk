@@ -1,0 +1,11 @@
+<header class=" bg-graphite sticky w-full h-16 grid grid-cols-3 text-ice-main" >
+    <a href="/" class="text-ice-main text-2xl lato-black w-fit col-start-1 self-center ml-12"> Gustavo Soares </a>
+    
+    <nav class="col-start-2 self-center justify-self-center select-none">
+        {% for item in navigation.items %}
+            <a href="{{ item.url }}" class="text-center text-lg m-1 px-3 py-2 rounded-[0.25rem] hover:bg-graphite-hover transition duration-[50ms]">{{ item.text }}</a>
+        {% endfor %}
+    </nav>
+
+    <button type="button" class="self-center justify-self-end w-12 h-10 mr-12 bg-red-400">cor</button>
+</header>

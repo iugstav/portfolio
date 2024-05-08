@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-black {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .lato-thin-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .lato-black-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+.roboto-condensed-bold {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.roboto-condensed-regular {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.scrollbar-custom {
+  scrollbar-color: #3D4244 #1C1D1F;
+  scrollbar-width: thin;
+}
+
+@tailwind utilities;
+
+body {
+    background-color: #1a1a1a;
+}

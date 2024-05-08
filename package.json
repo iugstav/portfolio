@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.4"
+  }
+}
