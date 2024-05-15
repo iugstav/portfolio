@@ -2,8 +2,8 @@
 layout: base.njk
 ---
 
-<main class="w-full flex justify-center">
-    <div class="w-4/5 h-first-screen flex items-center justify-center text-white ">
+<main class="w-full overflow-y-scroll flex flex-col items-center">
+    <section class="w-4/5 h-first-screen flex items-center justify-center">
         <div class="flex flex-row justify-between w-[95%]">
             <div class="flex flex-col justify-between select-none">
                 <div>
@@ -20,7 +20,7 @@ layout: base.njk
                         </span>
 
                     </div>
-                    <p class="roboto-condensed-regular text-4xl ml-[0.05rem] text-ice-secondary">É um prazer te ter por aqui.</p>
+                    <p class="roboto-condensed-regular text-3xl ml-[0.05rem] text-ice-secondary">É um prazer te ter por aqui.</p>
                 </div>
 
                 <p class="roboto-condensed-regular text-2xl ml-[0.05rem] text-ice-secondary opacity-40">Obs.: o terminal à direita é interativo!</p>
@@ -30,5 +30,19 @@ layout: base.njk
                 {% include "components/terminal.njk" %}
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="w-4/5 h-[50vh] flex items-center justify-center text-ice-main">
+        <div class="w-[95%] flex justify-between">
+            <div class="select-none">
+                <h1 class="roboto-condensed-bold text-[5rem] leading-tight">SOBRE MIM</h1>
+                <p class="text-4xl ml-1">Quem é <span class="roboto-condensed-bold">Gustavo Soares</span>?</p>
+            </div>
+            
+            <div class="w-[52%] mt-2 ml-2 text-2xl text-balance lato-regular leading-normal">
+                <p class="mb-4">Sempre fui curioso, gosto pensar na filosofia da educação continuada e com o universo dos códigos não seria diferente. <span class="lato-bold">Todo dia a gente aprende uma coisa nova, né?</span></p>
+                <p>Desde 2020, meu primeiro contato com a computação como autodidata, me considero um entusiasta de linguagens, mas com foco inicial no desenvolvimento web, minha primeira área de estudo. Atualmente foco em <span class="text-emphasis">back-end</span> e <span class="text-emphasis">Data Science</span> sem as amarras de tecnologia X ou Y. Afinal, são só ferramentas.</p>
+            </div>
+        </div>
+    </section>
 </main>
