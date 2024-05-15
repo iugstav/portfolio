@@ -11,6 +11,7 @@ module.exports = {
 				"code-green": "#B8BB24",
 				"code-cyan": "#83A598",
 				"code-red": "#fb4934",
+				"emphasis": "#EBB731"
 			},
 			height: {
 				"first-screen": "calc(100vh - 4rem)",
