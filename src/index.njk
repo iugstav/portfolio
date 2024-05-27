@@ -3,7 +3,7 @@ layout: base.njk
 ---
 
 <main class="w-full overflow-y-scroll flex flex-col items-center">
-    <section class="w-4/5 h-first-screen flex items-center justify-center">
+    <section id="reception" class="w-4/5 max-w-full h-first-screen flex items-center justify-center">
         <div class="flex flex-row justify-between w-[95%]">
             <div class="flex flex-col justify-between select-none">
                 <div>
@@ -32,16 +32,36 @@ layout: base.njk
         </div>
     </section>
 
-    <section class="w-4/5 h-[50vh] flex items-center justify-center text-ice-main">
-        <div class="w-[95%] flex justify-between">
-            <div class="select-none">
-                <h1 class="roboto-condensed-bold text-[5rem] leading-tight">SOBRE MIM</h1>
-                <p class="text-4xl ml-1">Quem é <span class="roboto-condensed-bold">Gustavo Soares</span>?</p>
+    <section id="aboutme" class="w-4/5 flex flex-col items-center text-ice-main mb-48">
+        <div class="w-[95%] flex flex-col mb-20">
+            <div class="flex justify-between">
+                <div class="select-none">
+                    <h1 class="roboto-condensed-bold text-[5rem] leading-tight">SOBRE MIM</h1>
+                    <p class="roboto-condensed-regular text-4xl ml-1">Quem é <span class="roboto-condensed-bold">Gustavo Soares</span>?</p>
+                </div>
+                
+                <div class="w-[52%] mt-2 ml-2 text-2xl text-balance lato-regular leading-normal">
+                    <p class="mb-4">Sempre fui curioso, gosto pensar na filosofia da educação continuada e com o universo dos códigos não seria diferente. <span class="lato-bold">Todo dia a gente aprende uma coisa nova, né?</span></p>
+                    <p>Desde 2020, meu primeiro contato com a computação como autodidata, me considero um entusiasta de linguagens, mas com foco inicial no desenvolvimento web, minha primeira área de estudo. Atualmente foco em <span class="text-emphasis">back-end</span> e <span class="text-emphasis">Data Science</span>.</p>
+
+                </div>
             </div>
-            
-            <div class="w-[52%] mt-2 ml-2 text-2xl text-balance lato-regular leading-normal">
-                <p class="mb-4">Sempre fui curioso, gosto pensar na filosofia da educação continuada e com o universo dos códigos não seria diferente. <span class="lato-bold">Todo dia a gente aprende uma coisa nova, né?</span></p>
-                <p>Desde 2020, meu primeiro contato com a computação como autodidata, me considero um entusiasta de linguagens, mas com foco inicial no desenvolvimento web, minha primeira área de estudo. Atualmente foco em <span class="text-emphasis">back-end</span> e <span class="text-emphasis">Data Science</span> sem as amarras de tecnologia X ou Y. Afinal, são só ferramentas.</p>
+
+        </div>
+
+        <div class="w-[95%] flex flex-col">
+            <div class="flex justify-between">
+                <div class="mt-4 max-w-72 gap-x-8 gap-y-3 flex flex-wrap justify-center">
+                    {% for icon in icons.languages %}
+                        <div class="w-24 h-24" aria-label="{{ icon.name }}">
+                            {% svg icon.url %}
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="w-[52%] mt-2 ml-2 text-2xl text-balance lato-regular leading-normal">
+                    <p>Comecei em C e logo após o ciclo básico das linguagens imperativas, me foquei em aprender Javascript. Apos Javascript, me tornei um nômade de linguagens, aprendendo, criando funcionalidades e me divertindo com as diferentes implementações e resoluções de problema. Em sua grande parte, foram linguagens voltadas para desenvolvimento web.</p>
+                </div>
             </div>
         </div>
     </section>
