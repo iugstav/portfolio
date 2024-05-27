@@ -1,0 +1,28 @@
+{
+    "languages": [
+        {
+            "name": "Javascript",
+            "url": "javascript.svg"
+        },
+        {
+            "name": "Typescript",
+            "url": "typescript.svg"
+        },
+        {
+            "name": "Go",
+            "url": "go.svg"
+        },
+        {
+            "name": "PHP",
+            "url": "php.svg"
+        },
+        {
+            "name": "Linguagem de Programação C",
+            "url": "c.svg"
+        },
+        {
+            "name": "Python",
+            "url": "python.svg"
+        }
+    ]
+}
