@@ -2,15 +2,15 @@
     "items": [
         {
             "text": "Início",
-            "url": "/"
+            "url": "#reception"
         },
         {
             "text": "Sobre Mim",
-            "url": "/"
+            "url": "#aboutme"
         },
         {
             "text": "Projetos",
-            "url": "/"
+            "url": "#projects"
         }
     ]
 }
