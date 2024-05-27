@@ -26,7 +26,7 @@ const commands = {
 				return -1;
 			}
 
-			return "<pre>about-me    blog</pre>";
+			return "<pre>about-me\tblog</pre>";
 		},
 	},
 
@@ -45,13 +45,13 @@ const commands = {
 	},
 	version: {
 		run: () => {
-			return "0.1.0";
+			return "<pre>0.1.0</pre>";
 		},
 	},
 
 	clear: {
 		run: () => {
-			terminal.innerHTML = `<p>Digite <span class="text-code-cyan">help</span> para ver os comandos disponíveis</p>`;
+			terminal.innerHTML = `<p class="text-ice-main">Digite <span class="text-code-cyan">help</span> para ver os comandos disponíveis</p>`;
 		},
 	},
 };
@@ -68,7 +68,7 @@ const html = `
             spellcheck="false" 
             autocorrect="false" 
             autospell="false"
-            class="w-[90%] h-auto break-words bg-transparent jetbrains-mono overflow-hidden box-border focus:outline-none"
+            class="w-[90%] h-auto break-words bg-transparent text-ice-main jetbrains-mono overflow-hidden box-border focus:outline-none"
         ></div>
     </div>
 </div>`;
@@ -133,14 +133,14 @@ function handleTextareaKeyDown(ev) {
 			const command = splittedInput[0];
 
 			if (!HELP[command]) {
-				const errorMsg = `<p class="text-ice-main"> <span class="text-code-red">erro:</span> comando inválido.</p>`;
+				const errorMsg = `<p class="text-ice-main"><span class='text-code-cyan'>erro:</span> comando inválido.</p>`;
 				terminal.insertAdjacentHTML("beforeend", errorMsg);
 			}
 
 			switch (command) {
 				case "help":
 				case "version": {
-					const output = `<div>
+					const output = `<div class="text-ice-main">
                     ${commands[command].run()}
                     </div>`;
 
@@ -151,7 +151,7 @@ function handleTextareaKeyDown(ev) {
 				case "ls": {
 					const args = splittedInput.slice(1);
 
-					const output = `<div>
+					const output = `<div class="text-ice-main">
                     ${commands[command].run(args.length, args)}
                     </div>`;
 
