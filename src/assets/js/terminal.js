@@ -7,7 +7,7 @@ const HELP = {
 	},
 	help: {
 		desc: "Lista todos os comandos disponíveis",
-		usage: "help | help [comando]",
+		usage: "help",
 	},
 	version: {
 		desc: "Mostra a versão atual do terminal",
@@ -68,7 +68,7 @@ const html = `
             spellcheck="false"
             autocorrect="false"
             autospell="false"
-            class="w-[90%] h-auto break-words bg-transparent text-ice-main jetbrains-mono overflow-hidden box-border focus:outline-none"
+            class="w-[90%] h-auto break-words bg-transparent text-ice-main font-mono overflow-hidden box-border focus:outline-none"
         ></div>
     </div>
 </div>`;

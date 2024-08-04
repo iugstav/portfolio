@@ -13,7 +13,13 @@ module.exports = {
 			sm: { max: "680px" },
 			ph: { max: "539px" },
 		},
+		
 		extend: {
+			fontFamily: {
+				sans: "'Roboto Condensed'",
+				lato: "Lato",
+				mono: "'JetBrains Mono'",
+			},
 			colors: {
 				graphite: "#1a1a1a",
 				"graphite-hover": "#2c2c2c",
