@@ -3,7 +3,7 @@
 const plugin = require("tailwindcss");
 
 module.exports = {
-	content: ["./src/**/*.njk"],
+	content: ["./src/_includes/*.njk", "./src/_includes/**/*.njk", "./src/index.njk", "./src/assets/js/*.js"],
 	theme: {
 		screens: {
 			"2xl": { max: "1535px" },

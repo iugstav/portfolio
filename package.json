@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
-    "build": "npx @11ty/eleventy",
-    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss"
+    "build": "npx @11ty/eleventy && npm run prod:css",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss",
+    "prod:css": "cross-env NODE_ENV=production postcss src/assets/css/tailwind.css -o _site/assets/css/tailwind.css"
   },
   "keywords": [],
   "author": "",
@@ -14,13 +15,16 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.38",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-vite": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.4",
     "nunjucks": "^3.2.4"
   }
 }

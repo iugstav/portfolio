@@ -10,23 +10,21 @@
 	--c: #555555;
 }
 
-body {
-	background-color: #1a1a1a;
-}
+@layer components {
+	.glow-overlay {
+		--glow-size: 15rem;
 
-.glow-overlay {
-	--glow-size: 15rem;
-
-	position: absolute;
-	inset: 0;
-	pointer-events: none;
-	user-select: none;
-	opacity: var(--opacity, 0);
-	mask: radial-gradient(
-		var(--glow-size) var(--glow-size) at var(--x) var(--y),
-		var(--color) 1%,
-		transparent 50%
-	);
-	transition: 400ms mask ease;
-	will-change: mask;
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+		user-select: none;
+		opacity: var(--opacity, 0);
+		mask: radial-gradient(
+			var(--glow-size) var(--glow-size) at var(--x) var(--y),
+			var(--go) 1%,
+			transparent 50%
+		);
+		transition: 400ms mask ease;
+		will-change: mask;
+	}
 }
