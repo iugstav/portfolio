@@ -59,14 +59,14 @@ const commands = {
 const html = `
 <div id="term-text" class="mt-2">
     <p class="text-code-green">iugstav&commat;portfolio <span class="text-ice-main">~</span></p>
-    
+
     <div id="row" class="flex gap-2">
-        <span class="text-ice-main ">&#36;</span> 
+        <span class="text-ice-main ">&#36;</span>
         <div
             contenteditable="true"
             id="terminal-input"
-            spellcheck="false" 
-            autocorrect="false" 
+            spellcheck="false"
+            autocorrect="false"
             autospell="false"
             class="w-[90%] h-auto break-words bg-transparent text-ice-main jetbrains-mono overflow-hidden box-border focus:outline-none"
         ></div>
