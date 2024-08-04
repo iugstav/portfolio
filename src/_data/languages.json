@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "name": "go-ttm",
+            "tag": "compilador",
+            "class": "go",
+            "link": "https://github.com/iugstav/go-ttm",
+            "description": "Um programa de terminal que converte expressões matemáticas escritas por extenso para a sua versão numérica."
+        },
+        {
+            "name": "http-server",
+            "tag": "web",
+            "class": "c",
+            "link": "https://github.com/iugstav/http-server",
+            "description": "Um servidor HTTP implementado em C."
+        },
+        {
+            "name": "metodos-numericos",
+            "tag": "matemática",
+            "class": "python",
+            "link": "https://github.com/iugstav/metodos-numericos",
+            "description": "Implementação dos métodos numéricos comuns para uma mesma função."
+        }
+    ]
+}
