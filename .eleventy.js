@@ -8,6 +8,7 @@ module.exports = function (eleventyConfig) {
 	})
 
 	eleventyConfig.addPassthroughCopy("src/assets/js/terminal.js");
+	eleventyConfig.addPassthroughCopy("src/assets/js/cards.js");
 
 	eleventyConfig.setNunjucksEnvironmentOptions({
 		throwOnUndefined: true,
