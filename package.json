@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
     "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss"
   },
   "keywords": [],
@@ -17,7 +18,9 @@
     "tailwindcss": "^3.4.3"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-vite": "^4.0.0",
     "nunjucks": "^3.2.4"
   }
 }
